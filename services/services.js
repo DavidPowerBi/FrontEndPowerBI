@@ -5,7 +5,7 @@ module.exports = class Services {
   static async TarefaCreate(req, res) {
     let valores = req.body;
     const options = {
-      url: "https://9853635b-acd3-4cd9-aba7-e0b2f42ff9a4-00-1ukz8xj0wkghr.riker.replit.dev/tarefas/Cadastrar",
+      url: "https://b1aa2f14-a761-42cd-a419-7ec0fe75ed25-00-v9rwr7t7fkm.riker.replit.dev/tarefas/Cadastrar",
       method: "POST",
       data: valores
     };
@@ -17,7 +17,7 @@ module.exports = class Services {
   //LISTAR
   static async TarefaListar(req, res) {
     const options = {
-      url: 'https://9853635b-acd3-4cd9-aba7-e0b2f42ff9a4-00-1ukz8xj0wkghr.riker.replit.dev/tarefas',
+      url: 'https://b1aa2f14-a761-42cd-a419-7ec0fe75ed25-00-v9rwr7t7fkm.riker.replit.dev/tarefas',
       method: 'GET',
       data: {}
     };
@@ -31,7 +31,7 @@ module.exports = class Services {
   static async TarefaUpdate(req, res){
     let valores = req.body;
     const options = {
-      url: 'https://9853635b-acd3-4cd9-aba7-e0b2f42ff9a4-00-1ukz8xj0wkghr.riker.replit.dev/tarefas/'+valores.id_tarefa,
+      url: 'https://b1aa2f14-a761-42cd-a419-7ec0fe75ed25-00-v9rwr7t7fkm.riker.replit.dev/tarefas/'+valores.id_tarefa,
       method: 'PUT',
       data: valores
     };
@@ -43,7 +43,7 @@ module.exports = class Services {
   static async TarefaDelete(req, res){
     let id_tarefa = req.body.id_tarefa;
     const options ={
-      url: 'https://9853635b-acd3-4cd9-aba7-e0b2f42ff9a4-00-1ukz8xj0wkghr.riker.replit.dev/tarefas/'+id_tarefa,
+      url: 'https://b1aa2f14-a761-42cd-a419-7ec0fe75ed25-00-v9rwr7t7fkm.riker.replit.dev/tarefas/'+id_tarefa,
       method: 'DELETE'
     };
     axios(options);
